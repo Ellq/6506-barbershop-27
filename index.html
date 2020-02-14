@@ -14,17 +14,17 @@
           <img src="img/index-logo.svg" alt="Логотип барбершопа 'Бородинский'" width="371" height="155">
         </a>
         <ul>
-          <li><a href="info.html"></a></li>
-          <li><a href="news.html"></a></li>
-          <li><a href="price.html"></a></li>
-          <li><a href="catalog.html"></a></li>
-          <li><a href="contacts.html"></a></li>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Прайс-Лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
       </nav>
 
       <ul>
         <li>
-          <button type="button">Войти</button>
+          <a href="">Войти</a>
         </li>
       </ul>
 
@@ -108,7 +108,25 @@
         <p>
           Укажите желаему дату и время и мы свяжемся с вами для подтверждения брони
         </p>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="appointment-date">Дата</label>
+            <input type="date" name="date" id="appointment-date" value="2020-02-14">
+          </div>
+          <div>
+            <label for="appointment-time">Вреия</label>
+            <input type="time" name="time" id="appointment-time" value="10:00">
+          </div>
+          <div>
+            <label for="appointment-name">Ваше имя</label>
+            <input type="text" name="name" id="appointment-name" placeholder="Борода">
+          </div>
+          <div>
+            <label for="appointment-phone">Телефон</label>
+            <input type="tel" name="phone" id="appointment-phone" placeholder="+ 123 456-78-90">
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
 
     </main>
@@ -146,11 +164,34 @@
         Личный кабинет
       </h2>
       <p>Введите свой логин и пароль</p>
-      <!-- Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="user-login">Логин</label>
+          <input type="email" name="login" id="user-login" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="user-password">Пароль</label>
+          <input type="password" name="password" id="user-password" placeholder="">
+        </div>
+        <div>
+          <input type="checkbox" name="remember" id="user-remember">
+          <label for="user-remember">Запомните меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
-
+    </section>
+    
+    <section>
+      <h2>
+        Как до нас добраться
+      </h2>
+      <p>
+        <!-- тут карта -->
+      </p>
+      <button type="button">Закрыть</button>
     </section>
 
   </body>
-
 </html>
