@@ -4,16 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body>
-    <header>
-
-      <nav>
-        <a href="">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header-logo">
           <img src="img/index-logo.svg" alt="Логотип барбершопа 'Бородинский'" width="371" height="155">
         </a>
-        <ul>
+        <ul class="site-nav">
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Прайс-Лист</a></li>
@@ -21,34 +25,31 @@
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-
-      <ul>
+      <ul class="user-nav">
         <li>
           <a href="">Войти</a>
         </li>
       </ul>
-
     </header>
     <main>
-
-      <h1>Барбершоп "Бородинский"</h1>
+      <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
       <section>
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>Быстро</h3>
             <p>
               Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Круто</h3>
             <p>
               Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Дорого</h3>
             <p>
               Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
@@ -56,115 +57,119 @@
           </li>
         </ul>
       </section>
+      
+      <div class="index-columns">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>
+                Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+              </p>
+              <time datetime="2020-01-11">11 Января</time>
+            </li>
+            <li class="news-item">
+              <p>
+                В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+              </p>
+              <time datetime="2020-01-18">18 Января</time>
+            </li>
+          </ul>
+          <a href="news.html">Все новости</a>
+        </section>
 
-      <section>
-        <h2>Новости</h2>
-        <ul>
-          <li>
-            <p>
-              Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
-            </p>
-            <time datetime="2020-01-11">11 Января</time>
-          </li>
-          <li>
-            <p>
-              В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
-            </p>
-            <time datetime="2020-01-18">18 Января</time>
-          </li>
-        </ul>
-        <a href="news.html">Все новости</a>
-      </section>
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <figure class="gallery-content">
+            <a href="#">
+              <img src="img/index-photo.jpg" alt="Интерьер" width="286" height="164">
+            </a>
+          </figure>
+          <button class="button gallery-button gallery-button-prev" type="button">Назад</button>
+          <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+        </section>
+      </div>
 
-      <section>
-        <h2>Фотогалерея</h2>
-        <figure>
-          <a href="#">
-            <img src="img/index-photo.jpg" alt="Интерьер" width="286" height="164">
-          </a>
-        </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
-      </section>
+      <div class="index-columns">
+        <section class="contacts">
+          <h2>Контактная информация</h2>
+          <p>
+            Барбершоп "Бородинский"<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8 <br>
+            Телефон <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+          </p>
+          <p>
+            Время работы: <br>
+            ПН-ПТ: с 10:00 до 22:00 <br>
+            СБ-ВС: с 10:00 до 19:00
+          </p>
+          <a class="button" href="map.html">Как проехать</a>
+          <a class="button" href="contacts.html">Обратная связь</a>
+        </section>
 
-      <section>
-        <h2>Контактная информация</h2>
-        <p>
-          Барбершоп "Бородинский"<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8 <br>
-          Телефон <a href="tel:+74956660266">+7 (495) 666-02-66</a>
-        </p>
-        <p>
-          Время работы: <br>
-          ПН-ПТ: с 10:00 до 22:00 <br>
-          СБ-ВС: с 10:00 до 19:00
-        </p>
-        <a href="map.html">Как проехать</a>
-        <a href="contacts.html">Обратная связь</a>
-      </section>
-
-      <section>
-        <h2>Записаться</h2>
-        <p>
-          Укажите желаему дату и время и мы свяжемся с вами для подтверждения брони
-        </p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div>
-            <label for="appointment-date">Дата</label>
-            <input type="date" name="date" id="appointment-date" value="2020-02-14">
-          </div>
-          <div>
-            <label for="appointment-time">Вреия</label>
-            <input type="time" name="time" id="appointment-time" value="10:00">
-          </div>
-          <div>
-            <label for="appointment-name">Ваше имя</label>
-            <input type="text" name="name" id="appointment-name" placeholder="Борода">
-          </div>
-          <div>
-            <label for="appointment-phone">Телефон</label>
-            <input type="tel" name="phone" id="appointment-phone" placeholder="+ 123 456-78-90">
-          </div>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-
+        <section class="appointment">
+          <h2>Записаться</h2>
+          <p class="appointment-info">
+            Укажите желаему дату и время и мы свяжемся с вами для подтверждения брони
+          </p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="appointment-item">
+              <label for="appointment-date">Дата</label>
+              <input type="date" name="date" id="appointment-date" value="2020-02-14">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-time">Вреия</label>
+              <input type="time" name="time" id="appointment-time" value="10:00">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-name">Ваше имя</label>
+              <input type="text" name="name" id="appointment-name" placeholder="Борода">
+            </div>
+            <div class="appointment-item">
+              <label for="appointment-phone">Телефон</label>
+              <input type="tel" name="phone" id="appointment-phone" placeholder="+ 123 456-78-90">
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <div class="footer-contacts">
+        <p>
         Барбершоп "Бородинский"<br>
         Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8 <br>
         <a href="contacts.html">Как нас найти ?</a>
-        Телефон <a href="tel:+74956660266">+7 (495) 666-02-66</a>
-      </p>
-      <div>
+        Телефон <a class="footer-phone" href="tel:+74956660266">+7 (495) 666-02-66</a>
+        </p>
+      </div>
+      <div class="footer-social">
         <p>Давайте дружить</p>
         <ul>
           <li>
-            <a href=""><img src="img/vk.svg" alt="Вконтакте"></a>
+            <a class="social-button" href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
           </li>
           <li>
-            <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+            <a class="social-button" href="#"><img src="img/facebook.svg" alt="facebook"></a>
           </li>
           <li>
-            <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            <a class="social-button" href="#"><img src="img/instagram.svg" alt="instagram"></a>
           </li>
         </ul>
       </div>
-
-      <p>
+      <p class="footer-developer">
         Разработано:
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
 
-    <section>
+    <section class="modal modal-login">
       <h2>
         Личный кабинет
       </h2>
       <p>Введите свой логин и пароль</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
           <label for="user-login">Логин</label>
           <input type="email" name="login" id="user-login" placeholder="email@example.com">
@@ -176,19 +181,19 @@
         <div>
           <input type="checkbox" name="remember" id="user-remember">
           <label for="user-remember">Запомните меня</label>
-          <a href="#">Я забыл пароль!</a>
+          <a class="forget-password" href="#">Я забыл пароль!</a>
         </div>
-        <button type="submit">Войти</button>
+        <button class="button" type="submit">Войти</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="button-close" type="button">Закрыть</button>
     </section>
     
-    <section>
+    <section class="modal modal-map">
       <h2>
         Как до нас добраться
       </h2>
       <p>
-        <!-- тут карта -->
+        <!-- тут JS карта -->
       </p>
       <button type="button">Закрыть</button>
     </section>
