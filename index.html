@@ -191,34 +191,41 @@
       <h2>
         Личный кабинет
       </h2>
-      <p>Введите свой логин и пароль</p>
+      <p class="modal-description">Введите свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
-          <label for="user-login">Логин</label>
-          <input type="email" name="login" id="user-login" placeholder="email@example.com">
+          <label for="user-login visually-hidden">Логин</label>
+          <input class="user-login-icon" type="email" name="login" id="user-login" placeholder="email@example.com">
         </div>
         <div>
-          <label for="user-password">Пароль</label>
-          <input type="password" name="password" id="user-password" placeholder="">
+          <label for="user-password visually-hidden">Пароль</label>
+          <input class="user-password-icon" type="password" name="password" id="user-password" placeholder="">
         </div>
-        <div>
-          <input type="checkbox" name="remember" id="user-remember">
-          <label for="user-remember">Запомните меня</label>
+        <div class="modal-login-help">
+          <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember" id="user-remember">
+            <span class="checkbox-indecator"></span>
+            Запомните меня
+          </label>
           <a class="forget-password" href="#">Я забыл пароль!</a>
         </div>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="button-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     
     <section class="modal modal-map">
-      <h2>
+      <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
       <p>
-        <!-- тут JS карта -->
+        <img src="img/map.png" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
-      <button type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
   </body>
